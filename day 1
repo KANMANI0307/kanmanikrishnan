@@ -1,3 +1,6 @@
+1. sum
+
+
 #include <stdio.h>
 
 int main() {
@@ -8,8 +11,28 @@ int main() {
         sum=sum+(a%10);
         
         a=a/10;
-         printf("%d\n", sum);
+         printf("%d\n", sum);sum
     }
    
     return 0;
 }
+
+2. binary to decimal
+
+#include <stdio.h>
+
+int main() {
+    int binary = 1001, decimal = 0, base = 1, rem;
+
+    while (binary > 0) {
+        rem = binary % 10;
+        decimal += rem * base;
+        binary /= 10;
+        base *= 2;
+    }
+    printf("Decimal: %d", decimal);
+    return 0;
+}
+
+
+
